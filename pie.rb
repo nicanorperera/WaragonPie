@@ -18,11 +18,18 @@ class Pie
     valid_size? && valid_ingredients? && has_enough_ingredients?
   end
 
-  def delicious?
-    
+  def tasty?
+    ingredients_in_rows.any? do |row|
+      row.uniq.size == 1 || 
+      row.uniq.size == 2 && row.include?(:bisqt)
+    end    
   end
 
-  def rows
+  def tasty_row?(row)
+
+  end
+
+  def ingredients_in_rows
     rows = []
     @ingredients.each_slice(3) do |row| 
       rows << row
