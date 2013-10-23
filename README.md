@@ -10,9 +10,10 @@ Calcula la cantidad máxima de pasteles ricos distintos que pueden realizarse.
 El código:
 ==========
 
-Todo el código lo realicé en el lenguaje de programación Ruby.
+Todo el código lo realicé en el lenguaje de programación Ruby. A continuación las palabras en inglés que utilicé para representar los objetos del programa:
 
 ```ruby
+  Pie => pastel,
   sweet: dulce,
   candy: confite,
   fruit: fruta,
